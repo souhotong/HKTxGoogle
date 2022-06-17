@@ -61,7 +61,7 @@ def process_request(req_json):
          else:
              df.iat[state_dict[key]['y'],state_dict[key]['x']] = state_dict[key]['direction']
 
-    return decide(me,df) or T"
+    return decide(me,df) or "T"
 
 def decide(me,df):
     #print(me)
