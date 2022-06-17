@@ -128,7 +128,11 @@ def decide(me,df):
                move_options.remove('R')
 
     #print(move_options)
-    return move_options[random.randrange(len(move_options))]
+    if move_options is None:
+       return "T"
+    else:
+       return move_options[random.randrange(len(move_options))]
+
 
 def can_attack_north(me,df):
     max_x = df.shape[1]
